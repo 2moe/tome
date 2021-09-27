@@ -1,16 +1,17 @@
 [package]
-authors = ["2moe <25324935+2moe@users.noreply.github.com>"]
-description = "A simple test program. Convert strings to Pig Latin."
 name = "tome"
-version = "0.1.0"
+version = "0.0.1"
 edition = "2018"
+description = "WIP. A simple installer."
+authors = ["2moe <25324935+2moe@users.noreply.github.com>"]
 # keywords = ["cli"]
-license = "MIT"
-repository = "https://github.com/2moe/tome"
+license = "MIT/Apache-2.0"
+# repository = "https://github.com/2moe/tome"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [profile.release]
-opt-level = 3
+panic = "abort"
+opt-level = 2
 
 [dependencies]
